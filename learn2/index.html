@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        Code:<br>
+        <input type="text" id="code" onblur="fillcountry();"><br>
+        Country:<br>
+        <input type="text" id="country">
+    </form>
+
+    <br>
+
+    <p id="slowLoris">
+        Slow lorises are a group of several species of strepsirrhine primates which...
+        <a href="javascript:void(0);" onClick="expandLoris();"><em>Click for more.</em></a>
+    </p>
+    <br>
+    <br>
+
+    <h3 onmouseover="this.style.color='Red'"><strong>This is a simple list</strong></h3>
+    <div id="list">
+    <a href="Javascript:void(0)" onclick="placeList()"><h3>Click me</h3></a>
+    </div><br>
+
+    <p>
+        Hello this is the test paragraph thingy i just want to know  how it is stored within a variable
+    </p><br>
+
+    <div id="cal">
+        <p>Southern Cal is sunny.</p>
+        <p>Northern Cal is rainy.</p>
+        <p>Eastern Cal is desert.</p>
+        </div>
+        <div id="ny">
+        <p>Urban NY is crowded.</p>
+        <p>Rural NY is sparse.</p>
+        </div>
+    <div>
+
+    <br>
+    <input type="button" value="Foward" onclick="history.forward();">
+    <input type="button" value="Back" onclick="history.back();">
+</body>
+<script src="main3.js"></script>
+</html>

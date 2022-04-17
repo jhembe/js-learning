@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <a href="Javascript:void(0)" onClick="alert('Hi there');"> Click Me and see </a>
+    <br>
+    <a href="Javascript:void(0)" onClick="popup('Hello');"> This too </a>
+    <br>
+    <input type="button" value="Say Hello" onclick="popup('Hello World');">
+    <br>
+    <img src="img/jackson.png" onmouseover="src='img/matata.png'" onmouseout="src='img/jackson.png';">
+    <br>
+    <a href="index.html" onmouseover="this.style.color='green';" onmouseout="this.style.color='red';">Class Now</a>
+    <br>
+    <label>Email</label>
+    <input type="text" size="30" onfocus="this.style.backgroundColor='yellow';" onmouseout="this.style.backgroundColor='white';">
+    <br>
+    <br>
+
+    <form>
+        <label>First Name</label>
+        <input type="text" id="fname" onBlur="fullName();"><br>
+        <label>Second Name</label>
+        <input type="text" id="lname">
+    </form>
+
+    <br>
+    <br>
+
+    <form>
+        ZIP:<br>
+        <input type="text" id="zip" onBlur="fillCity();"><br>
+        City:<br>
+        <input type="text" id="city">
+    </form>
+    <br>
+    <input type="button" value="Foward" onclick="history.forward();">
+    <input type="button" value="Back" onclick="history.back();">
+
+</body>
+<script src="datetime.js"></script>
+</html>

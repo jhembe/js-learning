@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+</head>
+<body>
+    <form action="" onsubmit="return checkForNames()">
+        <table>
+            <label>First Name</label>
+            <input type="text" id="fname"><br>
+            <label>Second Name</label>
+            <input type="text" id="lname"><br>
+            <input type="submit" id="submit" value="Submit Form">
+        </table>
+    </form>
+    <!-- now we want to deal with drop downs -->
+
+    <form onsubmit="return checkForSelection('countries')">
+        <select id="countries">
+            <option value="" selected="selected">
+                SELECT A STATE
+            </option>
+                <option value="TZ">Tanzania</option>
+                <option value="KE">KENYA</option>
+                <option value="UG">Uganda</option>
+                <option value="RW">RWANDA</option>
+        </select>&nbsp;&nbsp;
+        <input type="submit" value="Submit selection">
+    </form>
+
+    <form action="" onsubmit="return checkForRadios()">
+        <input type="radio" name="rl" value="cat">Cat<br>
+        <input type="radio" name="rl" value="Dog">Dog<br>
+        <input type="radio" name="rl" value="Bat">Bat<br>
+        <input type="submit" value="Submit Radio">
+    </form>
+    
+</body>
+<script src="main.js"></script>
+</html>
